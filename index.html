@@ -27,6 +27,7 @@
                         clifford: '#da373d',
                         'bike-primary':'#E76F51',
                         'bike-primary-bg':'rgba(231, 111, 81, 0.1)',
+                        'bg-bike':'#23A6F0',
                     }
                 }
             }
@@ -127,8 +128,12 @@
      <main class="md:container md:mx-auto">
         <!-- 3 card part -->
          <section class="my-24">
-            <h3 class="text-4xl font-bold text-center mb-3">Featured Bikes In This Year</h3>
-            <p class="text-bike-primary text-center mb-8">Bost bike collection</p>
+                <h3 class="text-4xl font-bold text-center mb-3">Featured Bikes In This Year</h3>
+               <div>
+                <p class="text-bike-primary text-center ">Bost bike collection</p>
+                <div class="mx-auto w-[160px] border-orange-500 border-b-2 mb-8"> </div>
+               </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="card bg-base-100 ">
                     <figure>
@@ -193,6 +198,67 @@
                 </div>
             </div>
              </section>
+             <!-- Happy client -->
+             <section>
+                <h3 class="text-4xl font-bold text-center mb-8">Happy <span class="text-bike-primary">Client Says</span></h3>
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-500 max-w-screen-xl text-center px-10 py-8 mx-auto">
+                    <div class="avatar">
+                        <div class=" w-24 rounded-full mb-4 ring-offset-2">
+                            <img class="" src="images/others/user-1.png" />
+                        </div>
+                    </div>
+                    <p class="mb-4">Slate helps you see <br /> how many more days <br />
+                        you need to work to reach your <br /> financial <br /> goal for the month and year.</p>
+                    <div class="rating mb-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-bg-bike mb-4">Regina Miles</p>
+                    <p class="font-bold mb-4">Banker</p>
+                </div>
+                <div class="border border-gray-500 mx-auto text-center px-10 py-8">
+                    <div class="avatar">
+                        <div class="ring-primary mb-4 ring-offset-base-100 w-24 rounded-full  ring-offset-2">
+                            <img src="images/others/user-2.png" />
+                        </div>
+                    </div>
+                    <p class="mb-4">Slate helps you see <br /> how many more days <br />
+                    you need to work to reach your <br /> financial <br /> goal for the month and year.</p>
+                    <div class="rating mb-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-bg-bike font-bold mb-4">Regina Miles</p>
+                    <p class="font-bold mb-4">Banker</p>
+                </div>
+                <div class="border border-gray-500 text-center mx-auto px-8 py-8">
+                    <div class="avatar">
+                        <div class="ring-primary ring-offset-base-100 w-24 mb-4 rounded-full  ring-offset-2">
+                            <img class="" src="images/others/user-3.png" />
+                        </div>
+                    </div>
+                    <p class="mb-4">Slate helps you see <br /> how many more days <br />
+                    you need to work to reach your <br /> financial <br /> goal for the month and year.</p>
+
+                    <div class="rating mb-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="font-bold text-bg-bike mb-4">Regina Miles</p>
+                    <p class="font-bold mb-4">Banker</p>
+                </div>
+               </div>
+             </section>
              <!-- Question part -->
               <section class="my-24">
                 <h3 class="text-4xl font-bold text-center mb-12">Frequently Asked <span class=" text-bike-primary">Questions</span></h3>
@@ -252,27 +318,34 @@
                 </div>
               </section>
      </main>
-    <footer class="footer bg-black text-neutral-content p-10">
-        <aside>
-            
-            <p>
-                ACME Industries Ltd.
-                <br />
-                Providing reliable tech since 1992
-            </p>
-        </aside>
-        <nav>
-            <h6 class="footer-title">Get the app</h6>
-            <div class="grid grid-cols-1 gap-4">
-                <a>
-                    <img class="w-36" src="images/others/android.png" alt="" />
-                </a>
-                <a>
-                  <img class="w-36" src="images/others/ios.png" alt="" />  
-                </a>
-               
-            </div>
-        </nav>
+    <footer class="footer bg-black text-neutral-content p-10 ">
+        
+            <aside>
+                <div class="grid grid-cols-1 md:grid-cols-2 mb-5">
+                    <h2>Download Now</h2>
+                    <h3>License</h3>
+                </div>
+                <ul class="grid grid-cols-1 lg:grid-cols-6 mb-4">
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Careers</li>
+                    <li>Help</li>
+                    <li>Privacy Policy</li>
+                </ul>
+                <p>@ 2025 bike.All rights reserved</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Get the app</h6>
+                <div class="grid grid-cols-1 gap-4">
+                    <a>
+                        <img class="w-36" src="images/others/android.png" alt="" />
+                    </a>
+                    <a>
+                        <img class="w-36" src="images/others/ios.png" alt="" />
+                    </a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
